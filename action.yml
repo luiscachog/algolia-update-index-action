@@ -1,0 +1,22 @@
+name: "Update an Index to Algolia"
+description: "A GitHub Action to push a json file to Algolia's indices via python API"
+author: k4ch0
+branding:
+  icon: upload-cloud
+  color: blue
+inputs:
+  algolia_app_id:
+    description: 'Algolia APPLICATION_ID'
+    required: true
+  algolia_apikey:
+    description: 'Algolia API_KEY'
+    required: true
+  algolia_index_name:
+    description: 'Algolia INDEX_NAME'
+    required: true
+  file:
+    description: 'File path to json index'
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
