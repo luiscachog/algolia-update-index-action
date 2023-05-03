@@ -1,6 +1,6 @@
 name: "Update an Index to Algolia"
 description: "A GitHub Action to push a json file to Algolia's indices via python API"
-author: k4ch0
+author: luiscachog 
 branding:
   icon: upload-cloud
   color: blue
